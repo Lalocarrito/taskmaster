@@ -100,20 +100,8 @@ tareas con un estado (`Pendiente`, `En progreso` o `Completada`).
 | PUT    | `/tareas/<id>`  | Actualiza una tarea         |
 | DELETE | `/tareas/<id>`  | Elimina una tarea           |
 
-## Estructura del proyecto
-
-```
-proyecto-final/
-├── app.py          # Backend Flask: API REST e inicialización de la BD
-├── proyectos.db    # Base de datos SQLite (se crea automáticamente)
-└── static/
-    ├── index.html  # Interfaz principal (proyectos y tareas)
-    ├── app.js      # Lógica del frontend (fetch a la API)
-    └── style.css   # Estilos
-```
 
 ## Autor
 
 - **Josué Martínez** - [@Lalocarrito](https://github.com/Lalocarrito)
 
-Proyecto final de la materia Desarrollo de Sistemas IV.
