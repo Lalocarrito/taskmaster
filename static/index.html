@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>TaskMaster</h1>
+        </header>
+
+        <!-- SECCIÓN PROYECTOS -->
+        <section>
+            <h2>Proyectos</h2>
+            
+            <form id="form-proyecto" class="form-row">
+                <div class="form-group">
+                    <label>Título del Proyecto</label>
+                    <input type="text" id="p-titulo" required>
+                </div>
+                <div class="form-group">
+                    <label>Descripción</label>
+                    <input type="text" id="p-desc">
+                </div>
+                <button type="submit" class="btn btn-primary">Crear Proyecto</button>
+            </form>
+
+            <table class="data-table">
+                <thead>
+                    <tr><th>ID</th><th>Título</th><th>Descripción</th><th>Acciones</th></tr>
+                </thead>
+                <tbody id="lista-proyectos"></tbody>
+            </table>
+        </section>
+
+        <!-- SECCIÓN TAREAS -->
+        <section>
+            <h2>Tareas</h2>
+            
+            <form id="form-tarea" class="form-row">
+                <div class="form-group">
+                    <label>Nombre de Tarea</label>
+                    <input type="text" id="t-nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Proyecto</label>
+                    <select id="t-proyecto" required></select>
+                </div>
+                <button type="submit" class="btn btn-primary">Crear Tarea</button>
+            </form>
+
+            <table class="data-table">
+                <thead>
+                    <tr><th>ID</th><th>Tarea</th><th>Proyecto ID</th><th>Estado</th><th>Acciones</th></tr>
+                </thead>
+                <tbody id="lista-tareas"></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
